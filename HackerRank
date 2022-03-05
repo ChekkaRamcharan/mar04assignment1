@@ -1,0 +1,24 @@
+n=int(input('enter the no of values you want: '))
+l=[]
+c=0
+for i in range(n):
+    x=int(input())
+    l.append(x)
+dup=[]
+for i in l:
+    if i not in dup:
+        dup.append(i)
+    else:
+        c=c+1
+print('after removing duplicate values: ',dup)
+print('no of duplicate values: ',c)
+output:enter the no of values you want: 7
+2
+4
+5
+5
+3
+2
+7
+after removing duplicate values:  [2, 4, 5, 3, 7]
+no of duplicate values:  2
